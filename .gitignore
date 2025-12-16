@@ -1,0 +1,25 @@
+# Environment
+.env
+
+# Database
+*.db
+
+# Media files
+audio/
+videos/
+captions/
+*.mp4
+*.wav
+*.mp3
+*.avi
+*.mkv
+*.srt
+
+# Whisper / ML files
+whisper/
+whisper_git_copy/
+*.pt
+*.bin
+
+# Python cache
+__pycache__/
