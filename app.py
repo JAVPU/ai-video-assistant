@@ -1059,7 +1059,13 @@ import streamlit as st
 
 
 # Load .env file
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ModuleNotFoundError:
+    pass
+
+# load_dotenv()
 
 @st.cache_resource
 def load_whisper_model():
